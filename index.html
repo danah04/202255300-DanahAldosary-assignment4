@@ -3,420 +3,169 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Danah Aldosary — Portfolio</title>
-
+  <meta name="description" content="Danah Aldosary is a software engineering undergraduate and AI researcher studying reasoning and reliability in language and vision-language models." />
+  <title>Danah Aldosary | AI Research & Software Engineering</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
-
 <body>
-
-  <!-- NAV — burnt-orange bar, centered links with bullet separators -->
   <header id="navbar">
-    <nav class="nav-container">
+    <nav class="nav-container" aria-label="Primary navigation">
       <a href="#home" class="nav-logo">Danah Aldosary</a>
       <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
       <ul class="nav-links">
-        <li><a href="#home"       class="nav-link active">Home</a></li>
-        <li><a href="#about"      class="nav-link">About</a></li>
-        <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#projects"   class="nav-link">Projects</a></li>
-
-        <li>
-          <button id="theme-toggle" class="nav-link nav-link--cta" type="button">
-            🌙
-          </button>
-        </li>
-
-        <li><a href="#contact" class="nav-link nav-link--cta">Hire Me! &rarr;</a></li>
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#research" class="nav-link">Research</a></li>
+        <li><a href="#work" class="nav-link">Selected Work</a></li>
+        <li><button id="theme-toggle" class="nav-link nav-link--cta theme-toggle" type="button" aria-label="Switch to dark mode">Dark</button></li>
+        <li><a href="#contact" class="nav-link nav-link--cta">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-
   <main>
-
-    <!-- ============================================================
-      HERO — white bg, giant cobalt Cormorant name left-aligned,
-      cream card behind lower half, decorative shapes on right.
-    ============================================================ -->
     <section id="home" class="section section--hero">
       <div class="hero-inner">
-
         <div class="hero-text">
-          <p class="hero-greeting">Hey, I Am</p>
-          <!-- Replace FIRST and LAST with your name — the <br> makes it stack -->
-          <h1 class="hero-name">Danah<br>Aldosary</h1>
-          <p class="hero-tagline">
-            <!-- ~15 words: your major + what you want to do -->
-            Software Engineering student. I love learning, growing, and building things along the way.
-          </p>
+          <p class="hero-greeting">AI research · multimodal reasoning · reliable systems</p>
+          <h1 class="hero-name">Danah<br />Aldosary</h1>
+          <p class="hero-tagline">I study how language and vision-language models reason, revise their answers, and fail—and how we can evaluate them more carefully.</p>
+          <div class="hero-actions">
+            <a href="#research" class="btn btn--primary">Explore my research</a>
+            <a href="assets/Danah_Aldosary_Academic_CV.pdf" target="_blank" rel="noopener" class="btn btn--ghost">View CV</a>
+          </div>
         </div>
-
       </div>
-      <!-- Cream card that sits behind the lower portion of the hero -->
       <div class="hero-card-bg" aria-hidden="true"></div>
     </section>
 
-
-    <!-- ============================================================
-      ABOUT — single-column bio + stat cards + coursework
-    ============================================================ -->
     <section id="about" class="section section--about">
       <div class="section-inner">
-        <h2 class="section-title">About Me</h2>
-
+        <h2 class="section-title">About</h2>
         <div class="about-grid">
-
           <div class="about-text">
-            <p class="about-bio">
-              <!-- 2–3 sentences: name, university, year, major -->
-              I'm a junior Software Engineering student at King Fahd University of Petroleum and Minerals.
-            </p>
-            <p class="about-bio">
-              <!-- Interests, goals, what excites you -->
-              I'm curious about AI and exploring how it thinks and reasons (or doesn't). I want a career where I leave things a little better than I found them.
-            </p>
-
-            <!-- Replace with your actual skills / tools -->
-            <div class="about-skills">
-              <span class="skill-tag">AI/ML</span>
-              <span class="skill-tag">Research</span>
-              <span class="skill-tag">Software Development</span>
-              <span class="skill-tag">OOP</span>
-              <span class="skill-tag">Data Analysis</span>
-              <span class="skill-tag">Academic Writing</span>
+            <p class="about-lead">I am a Software Engineering undergraduate at King Fahd University of Petroleum and Minerals (KFUPM), graduating in June 2027.</p>
+            <p class="about-bio">At the BRAIN Lab, I investigate reasoning in language and vision-language models, with a focus on smaller models and realistic computational constraints. My work asks whether a model is responding to evidence or simply producing a convincing pattern—and what happens when perception itself is wrong.</p>
+            <p class="about-bio">I am also a member of KFUPM's Emerging Professor Program, which supports my doctoral study and my goal of returning to research and teaching as a faculty member.</p>
+            <div class="about-skills" aria-label="Research interests and technical skills">
+              <span class="skill-tag">Multimodal Reasoning</span><span class="skill-tag">VLM Evaluation</span><span class="skill-tag">LLM Reasoning</span><span class="skill-tag">Test-Time Scaling</span><span class="skill-tag">Experimental Design</span><span class="skill-tag">Python & PyTorch</span><span class="skill-tag">Geometric Deep Learning</span>
             </div>
-
-            <a href="assets/resume_jan_2026.pdf" target="_blank" class="btn btn--primary">
-              Download CV
-            </a>
+            <a href="assets/Danah_Aldosary_Academic_CV.pdf" target="_blank" rel="noopener" class="btn btn--primary">View full CV</a>
+          </div>
+          <div class="about-stats" aria-label="Academic highlights">
+            <div class="stat-card"><span class="stat-card__value">3.82</span><span class="stat-card__label">GPA / 4.00</span></div>
+            <div class="stat-card"><span class="stat-card__value">2027</span><span class="stat-card__label">Expected graduation</span></div>
+            <div class="stat-card"><span class="stat-card__value">1st</span><span class="stat-card__label">Author, manuscript under review</span></div>
+            <div class="stat-card"><span class="stat-card__value">110</span><span class="stat-card__label">TOEFL iBT / 120</span></div>
           </div>
         </div>
-
-        <!-- Relevant coursework chips -->
         <div class="coursework">
-          <h3 class="coursework__title">Relevant Coursework</h3>
+          <h3 class="coursework__title">Technical foundation</h3>
           <div class="coursework__list">
-            <span class="course-chip">Data Structures & Algorithms</span>
-            <span class="course-chip">Introduction to AI</span>
-            <span class="course-chip">Database Systems</span>
-            <span class="course-chip">Object-Oriented Programming</span>
-            <span class="course-chip">Software Design & Construction</span>
-            <span class="course-chip">Software Requirements Engineering</span>
-            <span class="course-chip">Discrete Structures</span>
-            <span class="course-chip">Computer Networks</span>
-            <span class="course-chip">Information Security</span>
-            <span class="course-chip">Introduction to Data Science</span>
-            <span class="course-chip">Design & Analysis of Algorithms</span>
-            <span class="course-chip">Web Engineering & Development</span>
-            <span class="course-chip">Software Testing</span>
-            <span class="course-chip">Software Project Management</span>
+            <span class="course-chip">Artificial Intelligence</span><span class="course-chip">Data Science</span><span class="course-chip">Design & Analysis of Algorithms</span><span class="course-chip">Data Structures</span><span class="course-chip">Software Design & Construction</span><span class="course-chip">Software Testing</span><span class="course-chip">Database Systems</span>
           </div>
         </div>
-
       </div>
     </section>
 
-
-    <!-- ============================================================
-      EXPERIENCE — left-spine timeline.
-      Works for internships, part-time jobs, research, clubs, volunteering.
-      Duplicate .timeline-item blocks to add more entries.
-    ============================================================ -->
-    <section id="experience" class="section section--experience">
+    <section id="research" class="section section--experience">
       <div class="section-inner">
-        <h2 class="section-title">Experience</h2>
-
+        <p class="section-kicker">Current focus</p>
+        <h2 class="section-title">Research & Academic Experience</h2>
         <div class="timeline">
-
-        <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-            <span class="timeline-date">Jan 2026 – Present</span>
-            <h3 class="timeline-role">AI Researcher</h3>
-            <p class="timeline-company">BRAIN Lab · KFUPM</p>
+          <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-card">
+            <span class="timeline-date">January 2026 – Present</span>
+            <h3 class="timeline-role">Undergraduate Researcher</h3>
+            <p class="timeline-company">BRAIN Lab · KFUPM · Supervisor: Dr. Muzammil Behzad</p>
             <ul class="timeline-details">
-                <li>Curently working on the "Chain-of-Thought Reasoning in Lightweight LLMs/VLMs" project.</li>
+              <li>Evaluated chain-of-thought and self-consistency prompting across language and small vision-language models.</li>
+              <li>Built the experimental pipeline, ran model evaluations, organized generated reasoning traces, and analyzed accuracy and consistency.</li>
+              <li>Found that self-consistency improved the tested language models but offered little benefit for the vision-language models, motivating a closer study of perception and reasoning failures.</li>
+              <li>Presented a poster at the 2026 Women in Data Science Conference in Dhahran; first author on <em>Evaluating Test-Time Scaling in Small Vision-Language Models</em>, currently under review.</li>
             </ul>
-            <div class="timeline-tags">
-                <span class="tl-tag">AI</span>
-                <span class="tl-tag">Research</span>
-            </div>
-            </div>
-        </div>
+            <div class="timeline-tags"><span class="tl-tag">Vision-Language Models</span><span class="tl-tag">Chain-of-Thought</span><span class="tl-tag">Self-Consistency</span><span class="tl-tag">Model Evaluation</span></div>
+          </div></div>
 
-        <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-            <span class="timeline-date">Jan 2025 – Feb 2025</span>
-            <h3 class="timeline-role">AI Specialization Training Program</h3>
+          <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-card">
+            <span class="timeline-date">2026 – 2027</span>
+            <h3 class="timeline-role">Undergraduate Thesis Researcher</h3>
+            <p class="timeline-company">Software Engineering Department · KFUPM</p>
+            <ul class="timeline-details">
+              <li>Designing a controlled study of whether small vision-language models revise stale answers when the visual evidence changes.</li>
+              <li>Testing whether identical prior reasoning has a different effect when described as the model's own analysis versus another model's analysis.</li>
+              <li>Comparing current-image accuracy and stale-answer repetition across controlled attribution conditions.</li>
+            </ul>
+            <div class="timeline-tags"><span class="tl-tag">Answer Revision</span><span class="tl-tag">Multimodal Evaluation</span><span class="tl-tag">Experimental Design</span></div>
+          </div></div>
+
+          <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-card">
+            <span class="timeline-date">June – August 2026</span>
+            <h3 class="timeline-role">Research & Development Intern</h3>
+            <p class="timeline-company">SLB · Dhahran Carbonate Research Center</p>
+            <ul class="timeline-details">
+              <li>Developed a geometric deep-learning pipeline that predicts clean reference surfaces from 3D triangle meshes of carbonate-rock pores.</li>
+              <li>Improved a graph neural network through controlled experiments with geometric loss terms, attention layers, and differentiable Taubin smoothing.</li>
+              <li>Reduced mean relative volume error below 1%, eliminated collapsed faces across the validation set, and delivered a trained model, reproducible codebase, and evaluation tools.</li>
+            </ul>
+            <div class="timeline-tags"><span class="tl-tag">PyTorch Geometric</span><span class="tl-tag">Graph Neural Networks</span><span class="tl-tag">3D Meshes</span></div>
+          </div></div>
+
+          <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-card">
+            <span class="timeline-date">January – February 2025</span>
+            <h3 class="timeline-role">AI Specialization Trainee</h3>
             <p class="timeline-company">KAUST Academy</p>
-            <ul class="timeline-details">
-                <li>Completed 80 hours of intensive training in machine learning, deep learning, and computer vision.</li>
-                <li>Built and evaluated models using Python, Scikit-learn, and PyTorch.</li>
-            </ul>
-            <div class="timeline-tags">
-                <span class="tl-tag">Python</span>
-                <span class="tl-tag">PyTorch</span>
-                <span class="tl-tag">Scikit-learn</span>
-            </div>
-            </div>
-        </div>
+            <ul class="timeline-details"><li>Completed 80 hours of intensive training in machine learning, deep learning, and computer vision.</li><li>Built and evaluated models using Python, Scikit-learn, and PyTorch.</li></ul>
+            <div class="timeline-tags"><span class="tl-tag">PyTorch</span><span class="tl-tag">Computer Vision</span><span class="tl-tag">Machine Learning</span></div>
+          </div></div>
 
-        <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-            <span class="timeline-date">Sep 2024 – Dec 2024</span>
-            <h3 class="timeline-role">OOP Lab Assistant</h3>
-            <p class="timeline-company">KFUPM · Dhahran, Saudi Arabia</p>
-            <ul class="timeline-details">
-                <li>Guided students through object-oriented programming concepts during lab sessions.</li>
-                <li>Assisted with debugging and troubleshooting to strengthen problem-solving skills.</li>
-            </ul>
-            <div class="timeline-tags">
-                <span class="tl-tag">Java</span>
-                <span class="tl-tag">OOP</span>
-                <span class="tl-tag">Teaching</span>
-            </div>
-            </div>
-        </div>
-
-        <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-            <span class="timeline-date">Aug 2024 – May 2025</span>
-            <h3 class="timeline-role">Documenter</h3>
-            <p class="timeline-company">Female Computer Club · KFUPM</p>
-            <ul class="timeline-details">
-                <li>Organized the club's archive and communication channels for streamlined access to records.</li>
-                <li>Created weekly summaries of marketing committee activities.</li>
-            </ul>
-            <div class="timeline-tags">
-                <span class="tl-tag">Documentation</span>
-                <span class="tl-tag">Teamwork</span>
-            </div>
-            </div>
-        </div>
-
-        <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-            <span class="timeline-date">Jan 2025 – Feb 2025</span>
-            <h3 class="timeline-role">Public Relations Officer</h3>
-            <p class="timeline-company">CTF KFUPM</p>
-            <ul class="timeline-details">
-                <li>Handled public relations for the KFUPM CTF event.</li>
-            </ul>
-            <div class="timeline-tags">
-                <span class="tl-tag">Public Relations</span>
-            </div>
-            </div>
-        </div>
-
-        </div>
-
+          <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-card">
+            <span class="timeline-date">September 2024 – Present · Selected terms</span>
+            <h3 class="timeline-role">Teaching & Academic Support</h3>
+            <p class="timeline-company">KFUPM</p>
+            <ul class="timeline-details"><li>Currently grade Introduction to Software Engineering coursework and provide feedback using instructor guidelines.</li><li>Previously graded Information Security assessments.</li><li>Facilitated weekly Object-Oriented Programming labs in Java, supporting students during exercises and debugging.</li></ul>
+            <div class="timeline-tags"><span class="tl-tag">Teaching</span><span class="tl-tag">Software Engineering</span><span class="tl-tag">Mentoring</span></div>
+          </div></div>
         </div>
       </div>
     </section>
 
-    <!-- ============================================================
-      PROJECTS — card grid, no cover images needed.
-      Works for academic, personal, hackathon projects.
-      Duplicate .project-card to add more.
-    ============================================================ -->
-    <section id="projects" class="section section--projects">
+    <section id="work" class="section section--projects">
       <div class="section-inner">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-controls">
-          <select id="filter-category" class="form-input">
-            <option value="all">All Projects</option>
-            <option value="web">Web</option>
-            <option value="design">Design</option>
-            <option value="academic">Academic</option>
-          </select>
-
-          <select id="sort-projects" class="form-input">
-            <option value="newest">Newest First</option>
-            <option value="oldest">Oldest First</option>
-          </select>
-
-          <select id="filter-level" class="form-input">
-            <option value="all">All Levels</option>
-            <option value="beginner">Beginner</option>
-            <option value="advanced">Advanced</option>
-          </select>
-        </div>
-
-        <p id="projects-message"></p>
-
+        <p class="section-kicker">Research and engineering</p>
+        <h2 class="section-title">Selected Work</h2>
+        <p class="section-intro">A selection of work that reflects how I approach questions: define the failure clearly, build the system needed to test it, and examine the evidence carefully.</p>
         <div class="projects-grid">
-
-          <!-- ROUTE VISUALIZATION APP -->
-          <article class="project-card" data-category="web" data-year="2025" data-level="advanced">
-            <div class="project-card__top">
-              <span class="project-card__tag">Academic</span>
-            </div>
-            <h3 class="project-card__title">Route Visualization Application</h3>
-            <p class="project-card__desc">
-              A JavaFX desktop application that visualizes student routes between classes based on schedule data. 
-              I parsed Excel data into structured domain objects using OOP principles and implemented custom canvas drawing 
-              with distance calculations without relying on pre-built components.
-            </p>
-            <div class="project-card__tech">
-              <span class="tech-tag">Java</span>
-              <span class="tech-tag">JavaFX</span>
-              <span class="tech-tag">OOP</span>
-              <span class="tech-tag">Excel Parsing</span>
-            </div>
-          </article>
-
-          <!-- HORSE RACING DBMS -->
-          <article class="project-card" data-category="web" data-year="2025" data-level="beginner">
-            <div class="project-card__top">
-              <span class="project-card__tag">Academic</span>
-            </div>
-            <h3 class="project-card__title">Horse Racing Database Management System</h3>
-            <p class="project-card__desc">
-              A Java and MySQL database system developed using JDBC to manage racing data efficiently. 
-              I implemented stored procedures and triggers to ensure safe data deletion and structured archiving, 
-              reinforcing database integrity and backend logic design.
-            </p>
-            <div class="project-card__tech">
-              <span class="tech-tag">Java</span>
-              <span class="tech-tag">MySQL</span>
-              <span class="tech-tag">JDBC</span>
-              <span class="tech-tag">SQL</span>
-            </div>
-          </article>
-
-          <!-- FPL LINEAR REGRESSION -->
-          <article class="project-card" data-category="web" data-year="2024" data-level="advanced">
-            <div class="project-card__top">
-              <span class="project-card__tag">Academic</span>
-            </div>
-            <h3 class="project-card__title">FPL Player Points Prediction Model</h3>
-            <p class="project-card__desc">
-              A linear regression model built to predict Fantasy Premier League player points using historical data. 
-              I analyzed performance patterns and evaluated model accuracy using error metrics to support strategic team selection decisions.
-            </p>
-            <div class="project-card__tech">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Scikit-learn</span>
-              <span class="tech-tag">Pandas</span>
-              <span class="tech-tag">NumPy</span>
-            </div>
-          </article>
-
+          <article class="project-card project-card--featured"><div class="project-card__top"><span class="project-card__tag">Manuscript · Under Review</span></div><h3 class="project-card__title">Evaluating Test-Time Scaling in Small Vision-Language Models</h3><p class="project-card__desc">A first-author study testing whether chain-of-thought and self-consistency gains transfer from language models to smaller vision-language models. The results reveal a gap between repeated agreement and improved correctness in the evaluated multimodal models.</p><div class="project-card__tech"><span class="tech-tag">VLMs</span><span class="tech-tag">LLMs</span><span class="tech-tag">Evaluation</span><span class="tech-tag">Python</span></div></article>
+          <article class="project-card project-card--featured"><div class="project-card__top"><span class="project-card__tag">Undergraduate Thesis · In Progress</span></div><h3 class="project-card__title">When Models Inherit Their Own Mistakes</h3><p class="project-card__desc">A controlled study of whether perceived ownership of earlier reasoning affects a vision-language model's willingness to reconsider a stale answer after the visual evidence changes.</p><div class="project-card__tech"><span class="tech-tag">Answer Revision</span><span class="tech-tag">Attribution</span><span class="tech-tag">Multimodal Reasoning</span></div></article>
+          <article class="project-card"><div class="project-card__top"><span class="project-card__tag">Software Engineering</span></div><h3 class="project-card__title">Route Visualization Application</h3><p class="project-card__desc">Built a JavaFX application that parses student schedule data into domain objects and draws routes between classes using custom canvas rendering and distance calculations.</p><div class="project-card__tech"><span class="tech-tag">Java</span><span class="tech-tag">JavaFX</span><span class="tech-tag">OOP</span><span class="tech-tag">Data Parsing</span></div></article>
+          <article class="project-card"><div class="project-card__top"><span class="project-card__tag">Software Testing & Security</span></div><h3 class="project-card__title">bzip2 Fuzzing & Coverage Analysis</h3><p class="project-card__desc">Performed greybox fuzz testing and source-based coverage analysis in Linux, completing 24-hour campaigns across approximately 26 million executions and mapping exercised and untested paths.</p><div class="project-card__tech"><span class="tech-tag">Fuzzing</span><span class="tech-tag">Coverage Analysis</span><span class="tech-tag">Linux</span><span class="tech-tag">Control-Flow Graphs</span></div></article>
+          <article class="project-card"><div class="project-card__top"><span class="project-card__tag">Full-Stack Engineering</span></div><h3 class="project-card__title">KFUPM Lost & Found Platform</h3><p class="project-card__desc">Built a campus platform with REST APIs, JWT authentication, role-based access control, audit logging, and secure messaging, then deployed it using cloud services.</p><div class="project-card__tech"><span class="tech-tag">React</span><span class="tech-tag">Node.js</span><span class="tech-tag">MongoDB</span><span class="tech-tag">JWT</span></div></article>
         </div>
       </div>
     </section>
 
-    <section id="facts" class="section">
-      <div class="section-inner">
-        <h2 class="section-title">Did You Know?</h2>
-
-        <p id="fact-text">Loading fact...</p>
-        <p id="fact-status"></p>
-
-        <button id="new-fact-btn" class="btn btn--primary">
-          Get New Fact
-        </button>
-      </div>
-    </section>
-    <!-- ============================================================
-      CONTACT
-      Left: short note + email + socials. Right: form.
-    ============================================================ -->
     <section id="contact" class="section section--contact">
-      <div class="section-inner">
-        <div class="contact-grid">
-
-          <div class="contact-info">
-            <h2 class="section-title">Let's Connect</h2>
-            <p class="contact-intro">
-              Whether you have an internship opportunity, want to
-              collaborate on a project, or just want to say hello —
-              I'd love to hear from you.
-            </p>
-
-            <ul class="contact-details">
-              <li class="contact-detail-item">
-                <span class="contact-icon">✉</span>
-                <!-- Replace with your real email -->
-                <a href="mailto:you@university.edu">danahaldosary1@gmail.com</a>
-              </li>
-              <li class="contact-detail-item">
-                <span class="contact-icon">📍</span>
-                <span>Dammam, Saudi Arabia</span>
-              </li>
-            </ul>
-
-            <div class="contact-socials">
-              <a href="https://www.linkedin.com/in/danah-aldosary-004a032b5 " target="_blank" class="social-link">LinkedIn</a>
-              <a href="https://github.com/danah04" target="_blank" class="social-link">GitHub</a>
-            </div>
-          </div>
-
-          <form id="contact-form" class="contact-form" novalidate>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" id="name" name="name" class="form-input"
-                  placeholder="Your Name" required />
-                <span class="form-error" id="name-error"></span>
-              </div>
-              <div class="form-group">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" id="email" name="email" class="form-input"
-                  placeholder="you@example.com" required />
-                <span class="form-error" id="email-error"></span>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="subject" class="form-label">Subject</label>
-              <input type="text" id="subject" name="subject" class="form-input"
-                placeholder="Internship / Collaboration / Just saying hi" />
-            </div>
-
-            <div class="form-group">
-              <label for="message" class="form-label">Message</label>
-              <textarea id="message" name="message" class="form-input form-textarea"
-                rows="5" placeholder="Tell me a bit about what you have in mind..."
-                required></textarea>
-              <span class="form-error" id="message-error"></span>
-            </div>
-
-            <button type="submit" class="btn btn--primary btn--full">
-              Send Message &rarr;
-            </button>
-
-            <p id="form-feedback" class="form-feedback" aria-live="polite"></p>
-          </form>
-
+      <div class="section-inner"><div class="contact-grid">
+        <div class="contact-info">
+          <p class="section-kicker">Get in touch</p><h2 class="section-title">Let's Connect</h2>
+          <p class="contact-intro">I would be glad to hear from researchers, prospective mentors, and collaborators working on model reasoning, multimodal evaluation, or reliable AI.</p>
+          <ul class="contact-details"><li class="contact-detail-item"><span class="contact-icon" aria-hidden="true">✉</span><a href="mailto:s202255300@kfupm.edu.sa">s202255300@kfupm.edu.sa</a></li><li class="contact-detail-item"><span class="contact-icon" aria-hidden="true">⌖</span><span>Dammam, Saudi Arabia</span></li></ul>
+          <div class="contact-socials"><a href="https://www.linkedin.com/in/danah-aldosary-004a032b5" target="_blank" rel="noopener" class="social-link">LinkedIn</a><a href="https://github.com/danah04" target="_blank" rel="noopener" class="social-link">GitHub</a></div>
         </div>
-      </div>
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-row"><div class="form-group"><label for="name" class="form-label">Name</label><input type="text" id="name" name="name" class="form-input" placeholder="Your name" required /><span class="form-error" id="name-error"></span></div><div class="form-group"><label for="email" class="form-label">Email</label><input type="email" id="email" name="email" class="form-input" placeholder="you@example.com" required /><span class="form-error" id="email-error"></span></div></div>
+          <div class="form-group"><label for="subject" class="form-label">Subject</label><input type="text" id="subject" name="subject" class="form-input" placeholder="Research, graduate study, or collaboration" /></div>
+          <div class="form-group"><label for="message" class="form-label">Message</label><textarea id="message" name="message" class="form-input form-textarea" rows="5" placeholder="Tell me what you would like to discuss..." required></textarea><span class="form-error" id="message-error"></span></div>
+          <button type="submit" class="btn btn--primary btn--full">Send message</button><p id="form-feedback" class="form-feedback" aria-live="polite"></p>
+        </form>
+      </div></div>
     </section>
-
   </main>
 
-
-  <footer class="footer">
-    <div class="footer-inner">
-      <p class="footer-copy">
-        &copy; <span id="footer-year"></span> Danah Aldosary. Built with care.
-      </p>
-      <a href="#home" class="footer-top-link" aria-label="Back to top">&#8593; Top</a>
-    </div>
-  </footer>
-
+  <footer class="footer"><div class="footer-inner"><p class="footer-copy">&copy; <span id="footer-year"></span> Danah Aldosary.</p><a href="#home" class="footer-top-link">Back to top</a></div></footer>
   <script src="js/script.js"></script>
 </body>
 </html>
