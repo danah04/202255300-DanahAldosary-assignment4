@@ -124,6 +124,23 @@ h1, h2, h3, h4 {
   border-radius: 2px;
 }
 
+.section-kicker {
+  color: var(--c-orange);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  margin-bottom: 0.45rem;
+  text-transform: uppercase;
+}
+
+.section-kicker + .section-title { margin-top: 0; }
+
+.section-intro {
+  color: var(--c-gray);
+  margin: calc(-1 * var(--sp-lg)) 0 var(--sp-lg);
+  max-width: 68ch;
+}
+
 
 /* ==========================================================================
    4. BUTTONS
@@ -242,6 +259,13 @@ h1, h2, h3, h4 {
 /* "Hire Me!" CTA link — always bold */
 .nav-link--cta { font-weight: 600; color: var(--c-white); }
 
+.theme-toggle {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-family: var(--font-body);
+}
+
 .nav-toggle {
   display: none;
   background: none;
@@ -338,6 +362,12 @@ h1, h2, h3, h4 {
   margin-bottom: var(--sp-lg);
 }
 
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-sm);
+}
+
 
 /* ==========================================================================
    7. ABOUT
@@ -356,6 +386,15 @@ h1, h2, h3, h4 {
   color: var(--c-gray);
   margin-bottom: var(--sp-md);
   font-size: var(--fs-base);
+}
+
+.about-lead {
+  color: var(--c-navy);
+  font-family: var(--font-heading);
+  font-size: clamp(1.35rem, 2.4vw, 1.8rem);
+  font-weight: 600;
+  line-height: 1.35;
+  margin-bottom: var(--sp-md);
 }
 
 .about-skills {
@@ -550,6 +589,8 @@ h1, h2, h3, h4 {
   grid-template-columns: repeat(3, 1fr);
   gap: var(--sp-md);
 }
+
+.project-card.project-card--featured { border-top-color: var(--c-orange); }
 
 .project-card {
   background: var(--c-white);
@@ -846,6 +887,13 @@ h1, h2, h3, h4 {
   .hero-name { font-size: clamp(3.5rem, 20vw, 5.5rem); }
   .hero-card-bg { top: 50%; }
 
+  .hero-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .hero-actions .btn { justify-content: center; }
+
   .about-stats { grid-template-columns: 1fr 1fr; }
 
   .projects-grid { grid-template-columns: 1fr; }
@@ -908,10 +956,23 @@ body.dark-mode .hero-card-bg {
 /* Cards */
 body.dark-mode .project-card,
 body.dark-mode .timeline-card,
+body.dark-mode .stat-card,
 body.dark-mode .contact-form {
   background-color: #1f2937;
   color: #e5e7eb;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .about-lead,
+body.dark-mode .form-label {
+  color: #f8fafc;
+}
+
+body.dark-mode .course-chip,
+body.dark-mode .tl-tag,
+body.dark-mode .tech-tag {
+  background: #273449;
+  border-color: #374151;
 }
 
 /* Inputs */
