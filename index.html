@@ -32,7 +32,7 @@
         <div class="hero-text">
           <p class="hero-greeting">AI research · multimodal reasoning · reliable systems</p>
           <h1 class="hero-name">Danah<br />Aldosary</h1>
-          <p class="hero-tagline">I study how language and vision-language models reason, revise their answers, and fail, and how we can evaluate them more carefully.</p>
+          <p class="hero-tagline">I study how language and vision-language models reason, revise their answers, and fail, as well as how we can evaluate them more carefully.</p>
           <div class="hero-actions">
             <a href="#research" class="btn btn--primary">Explore my research</a>
             <a href="assets/Danah_Aldosary_Academic_CV.pdf" target="_blank" rel="noopener" class="btn btn--ghost">View CV</a>
@@ -55,12 +55,6 @@
             </div>
             <a href="assets/Danah_Aldosary_Academic_CV.pdf" target="_blank" rel="noopener" class="btn btn--primary">View full CV</a>
           </div>
-          <div class="about-stats" aria-label="Academic highlights">
-            <div class="stat-card"><span class="stat-card__value">3.82</span><span class="stat-card__label">GPA / 4.00</span></div>
-            <div class="stat-card"><span class="stat-card__value">2027</span><span class="stat-card__label">Expected graduation</span></div>
-            <div class="stat-card"><span class="stat-card__value">1st</span><span class="stat-card__label">Author, manuscript under review</span></div>
-            <div class="stat-card"><span class="stat-card__value">110</span><span class="stat-card__label">TOEFL iBT / 120</span></div>
-          </div>
         </div>
         <div class="coursework">
           <h3 class="coursework__title">Technical foundation</h3>
@@ -81,24 +75,12 @@
             <h3 class="timeline-role">Undergraduate Researcher</h3>
             <p class="timeline-company">BRAIN Lab · KFUPM · Supervisor: Dr. Muzammil Behzad</p>
             <ul class="timeline-details">
-              <li>Evaluated chain-of-thought and self-consistency prompting across language and small vision-language models.</li>
-              <li>Built the experimental pipeline, ran model evaluations, organized generated reasoning traces, and analyzed accuracy and consistency.</li>
-              <li>Found that self-consistency improved the tested language models but offered little benefit for the vision-language models, motivating a closer study of perception and reasoning failures.</li>
-              <li>Presented a poster at the 2026 Women in Data Science Conference in Dhahran; first author on <em>Evaluating Test-Time Scaling in Small Vision-Language Models</em>, currently under review.</li>
+              <li>Evaluated chain-of-thought prompting and self-consistency across small language and vision-language models to test whether inference-time scaling improves reasoning accuracy.</li>
+              <li>Implemented the evaluation pipeline, ran experiments across multiple models and benchmarks, logged individual reasoning traces, and analyzed accuracy and answer agreement.</li>
+              <li>Found that self-consistency improved the evaluated language models but offered little benefit for the vision-language models, despite greater agreement across sampled answers.</li>
+              <li>Extended the work through failure analysis of perception and reasoning errors and developed the resulting source-attribution question into an undergraduate thesis study.</li>
             </ul>
             <div class="timeline-tags"><span class="tl-tag">Vision-Language Models</span><span class="tl-tag">Chain-of-Thought</span><span class="tl-tag">Self-Consistency</span><span class="tl-tag">Model Evaluation</span></div>
-          </div></div>
-
-          <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-card">
-            <span class="timeline-date">2026 – 2027</span>
-            <h3 class="timeline-role">Undergraduate Thesis Researcher</h3>
-            <p class="timeline-company">Software Engineering Department · KFUPM</p>
-            <ul class="timeline-details">
-              <li>Designing a controlled study of whether small vision-language models revise stale answers when the visual evidence changes.</li>
-              <li>Testing whether identical prior reasoning has a different effect when described as the model's own analysis versus another model's analysis.</li>
-              <li>Comparing current-image accuracy and stale-answer repetition across controlled attribution conditions.</li>
-            </ul>
-            <div class="timeline-tags"><span class="tl-tag">Answer Revision</span><span class="tl-tag">Multimodal Evaluation</span><span class="tl-tag">Experimental Design</span></div>
           </div></div>
 
           <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-card">
@@ -122,11 +104,11 @@
           </div></div>
 
           <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-card">
-            <span class="timeline-date">September 2024 – Present · Selected terms</span>
-            <h3 class="timeline-role">Teaching & Academic Support</h3>
-            <p class="timeline-company">KFUPM</p>
-            <ul class="timeline-details"><li>Currently grade Introduction to Software Engineering coursework and provide feedback using instructor guidelines.</li><li>Previously graded Information Security assessments.</li><li>Facilitated weekly Object-Oriented Programming labs in Java, supporting students during exercises and debugging.</li></ul>
-            <div class="timeline-tags"><span class="tl-tag">Teaching</span><span class="tl-tag">Software Engineering</span><span class="tl-tag">Mentoring</span></div>
+            <span class="timeline-date">September – December 2024</span>
+            <h3 class="timeline-role">Object-Oriented Programming Lab Assistant</h3>
+            <p class="timeline-company">King Fahd University of Petroleum and Minerals</p>
+            <ul class="timeline-details"><li>Facilitated weekly Java labs, supported students during exercises, and helped debug code while reinforcing object-oriented programming concepts.</li></ul>
+            <div class="timeline-tags"><span class="tl-tag">Java</span><span class="tl-tag">Object-Oriented Programming</span><span class="tl-tag">Teaching Support</span></div>
           </div></div>
         </div>
       </div>
@@ -139,7 +121,6 @@
         <p class="section-intro">A selection of work that reflects how I approach questions: define the failure clearly, build the system needed to test it, and examine the evidence carefully.</p>
         <div class="projects-grid">
           <article class="project-card project-card--featured"><div class="project-card__top"><span class="project-card__tag">Manuscript · Under Review</span></div><h3 class="project-card__title">Evaluating Test-Time Scaling in Small Vision-Language Models</h3><p class="project-card__desc">A first-author study testing whether chain-of-thought and self-consistency gains transfer from language models to smaller vision-language models. The results reveal a gap between repeated agreement and improved correctness in the evaluated multimodal models.</p><div class="project-card__tech"><span class="tech-tag">VLMs</span><span class="tech-tag">LLMs</span><span class="tech-tag">Evaluation</span><span class="tech-tag">Python</span></div></article>
-          <article class="project-card project-card--featured"><div class="project-card__top"><span class="project-card__tag">Undergraduate Thesis · In Progress</span></div><h3 class="project-card__title">When Models Inherit Their Own Mistakes</h3><p class="project-card__desc">A controlled study of whether perceived ownership of earlier reasoning affects a vision-language model's willingness to reconsider a stale answer after the visual evidence changes.</p><div class="project-card__tech"><span class="tech-tag">Answer Revision</span><span class="tech-tag">Attribution</span><span class="tech-tag">Multimodal Reasoning</span></div></article>
           <article class="project-card"><div class="project-card__top"><span class="project-card__tag">Software Engineering</span></div><h3 class="project-card__title">Route Visualization Application</h3><p class="project-card__desc">Built a JavaFX application that parses student schedule data into domain objects and draws routes between classes using custom canvas rendering and distance calculations.</p><div class="project-card__tech"><span class="tech-tag">Java</span><span class="tech-tag">JavaFX</span><span class="tech-tag">OOP</span><span class="tech-tag">Data Parsing</span></div></article>
           <article class="project-card"><div class="project-card__top"><span class="project-card__tag">Software Testing & Security</span></div><h3 class="project-card__title">bzip2 Fuzzing & Coverage Analysis</h3><p class="project-card__desc">Performed greybox fuzz testing and source-based coverage analysis in Linux, completing 24-hour campaigns across approximately 26 million executions and mapping exercised and untested paths.</p><div class="project-card__tech"><span class="tech-tag">Fuzzing</span><span class="tech-tag">Coverage Analysis</span><span class="tech-tag">Linux</span><span class="tech-tag">Control-Flow Graphs</span></div></article>
           <article class="project-card"><div class="project-card__top"><span class="project-card__tag">Full-Stack Engineering</span></div><h3 class="project-card__title">KFUPM Lost & Found Platform</h3><p class="project-card__desc">Built a campus platform with REST APIs, JWT authentication, role-based access control, audit logging, and secure messaging, then deployed it using cloud services.</p><div class="project-card__tech"><span class="tech-tag">React</span><span class="tech-tag">Node.js</span><span class="tech-tag">MongoDB</span><span class="tech-tag">JWT</span></div></article>
